@@ -4,7 +4,7 @@ import App from './App';
 import {
   BrowserRouter,
 } from "react-router-dom";
-import './index.css';
+import './index.css'; // tailwind import
 
   
 const root = ReactDOM.createRoot(document.getElementById("root"));

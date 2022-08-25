@@ -4,7 +4,7 @@ const Card = () =>{
     return(
         <div className="grid grid-cols-12 gap-6 mt-5">
                                     <a className="transform  hover:scale-105 transition duration-300 shadow-xl rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white"
-                                        href="#">
+                                        href="#Card">
                                         <div className="p-5">
                                             <div className="flex justify-between">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-blue-400"

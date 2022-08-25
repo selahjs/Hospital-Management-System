@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import { DashboardHeader, Header } from ".";
+import { DashboardHeader } from ".";
 import { Calendar,Chat,Setting,User,Search,Chart,Folder,Chart_fill,logo } from "../utils/images";
 const App = () => {
   const [open, setOpen] = useState(true);
@@ -25,6 +25,7 @@ const App = () => {
         } bg-dark-purple h-screen p-5  pt-8 relative duration-300`}
       >
         <img
+          alt="something"
           src={ Calendar }
           className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
            border-2 rounded-full  ${!open && "rotate-180"}`}
@@ -32,6 +33,7 @@ const App = () => {
         />
         <div className="flex gap-x-4 items-center">
           <img
+            alt="something"
             src={logo}
             className={`cursor-pointer duration-500 ${
               open && "rotate-[360deg]"
@@ -54,7 +56,7 @@ const App = () => {
                 index === 0 && "bg-light-white"
               } `}
             >
-              <img src={`${Menu.src}`} />
+              <img alt="something" src={`${Menu.src}`} />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
                 {Menu.title}
               </span>
@@ -77,7 +79,7 @@ const App = () => {
                                 </div>
                                 <div className="grid grid-cols-12 gap-6 mt-5">
                                     <a className="transform  hover:scale-105 transition duration-300 shadow-xl rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white"
-                                        href="#">
+                                        href="#Card">
                                         <div className="p-5">
                                             <div className="flex justify-between">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-blue-400"
@@ -101,7 +103,7 @@ const App = () => {
                                         </div>
                                     </a>
                                     <a className="transform  hover:scale-105 transition duration-300 shadow-xl rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white"
-                                        href="#">
+                                        href="#Card">
                                         <div className="p-5">
                                             <div className="flex justify-between">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-yellow-400"
@@ -125,7 +127,7 @@ const App = () => {
                                         </div>
                                     </a>
                                     <a className="transform  hover:scale-105 transition duration-300 shadow-xl rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white"
-                                        href="#">
+                                        href="#Card">
                                         <div className="p-5">
                                             <div className="flex justify-between">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-pink-600"
@@ -152,7 +154,7 @@ const App = () => {
                                         </div>
                                     </a>
                                     <a className="transform  hover:scale-105 transition duration-300 shadow-xl rounded-lg col-span-12 sm:col-span-6 xl:col-span-3 intro-y bg-white"
-                                        href="#">
+                                        href="#Card">
                                         <div className="p-5">
                                             <div className="flex justify-between">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-green-400"
@@ -252,7 +254,7 @@ const App = () => {
                                                                         <td
                                                                             className="px-6 py-4 whitespace-no-wrap text-sm leading-5">
                                                                             <div className="flex space-x-4">
-                                                                                <a href="#" className="text-blue-500 hover:text-blue-600">
+                                                                                <a href="#Edit" className="text-blue-500 hover:text-blue-600">
                                                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                                                     className="w-5 h-5 mr-1"
                                                                                     fill="none" viewBox="0 0 24 24"
@@ -264,7 +266,7 @@ const App = () => {
                                                                                 </svg>
                                                                                 <p>Edit</p>
                                                                                 </a>
-                                                                                <a href="#" className="text-red-500 hover:text-red-600">
+                                                                                <a href="#Delete" className="text-red-500 hover:text-red-600">
                                                                                 <svg xmlns="http://www.w3.org/2000/svg"
                                                                                     className="w-5 h-5 mr-1 ml-3"
                                                                                     fill="none" viewBox="0 0 24 24"
